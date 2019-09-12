@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <Header />
+      <Header className="buttonStaunen" />
 
       <ColorGenerator />
     </>
@@ -50,9 +50,6 @@ function ColorGenerator() {
   const [myhue, setHue] = useState('random');
   const [mylum, setlum] = useState('random');
   let styles = {
-    margin: '20px',
-    width: '250px',
-    height: '250px',
     backgroundColor: color
   };
 
@@ -73,10 +70,11 @@ function ColorGenerator() {
         KLICKEN UND STAUNEN
       </button>
 
-      <h2>COLOR = {color}</h2>
-      <div className="yellow-box" style={styles}></div>
+      <h2 className="resultHex">COLOR = {color}</h2>
+      <div style={styles} className="yellowBox"></div>
 
       <select
+        className="colorSelector"
         name="color"
         value={myhue}
         onChange={event => setHue(event.target.value)}
@@ -93,6 +91,7 @@ function ColorGenerator() {
       </select>
 
       <select
+        className="lumSelector"
         name="luminosity"
         value={mylum}
         onChange={event => setlum(event.target.value)}
