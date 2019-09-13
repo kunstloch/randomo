@@ -46,7 +46,7 @@ function Header() {
 }
 
 function ColorGenerator() {
-  const [color, setColor] = useState('#ffffff');
+  const [color, setColor] = useState('#888888');
   const [myhue, setHue] = useState('random');
   const [mylum, setlum] = useState('random');
   let styles = {
@@ -67,7 +67,7 @@ function ColorGenerator() {
           );
         }}
       >
-        KLICKEN UND STAUNEN
+        CLICK ME
       </button>
 
       <h2 className="resultHex">COLOR = {color}</h2>

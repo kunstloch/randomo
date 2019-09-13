@@ -48,15 +48,17 @@ HIER KOMMT GRID
 h1,
 h2 {
   text-align: center;
-  margin: 10px;
+  margin: 5px;
+  grid-column: 1 / 4;
+  grid-row: 1;
 }
 
 header {
   background-color: white;
   color: black;
-  grid-column: 1 / 4;
+  grid-column: 2 / 4;
   grid-row: 1;
-  position: absolute;
+  position: center;
 }
 
 header h1 {
@@ -69,19 +71,28 @@ header h1 {
   grid-column: 3;
   grid-row: 1;
   z-index: 2;
-  align-self: right;
 }
 
 .buttonStaunen {
   grid-column: 2;
   grid-row: 2;
-  height: 150px;
-  font-size: 1.4vw;
+  font-weight: bold;
+  font-size: 2vw;
+  background: url('buttonRed.png');
+  background-size: 100% 100%;
+  width: 250px;
+  height: 250px;
+  border: 0;
+  border-style: none;
+  outline: none;
+  place-self: center;
+  padding-inline: auto;
 }
 
 .resultHex {
   grid-column: 2;
-  grid-row: 4;
+  grid-row: 3;
+  align-self: top;
 }
 
 .yellowBox {
@@ -103,6 +114,7 @@ header h1 {
 
 .colorSelector,
 .lumSelector {
-  margin: 10px;
-  padding: 10px;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  height: 50px;
 }
