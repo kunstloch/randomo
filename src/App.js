@@ -34,14 +34,20 @@ function Header() {
   const [status, setStatus] = useState(true);
 
   return (
-    <header className="container">
-      <h1>RANDOMO - THE Color Generator</h1>
+    <>
       <div className="infobox">
-        <button onClick={() => setStatus(false)}>What?</button>
-        <button onClick={() => setStatus(true)}>X</button>
-        <p hidden={status}>Bla bla bla balalala</p>
+        <button onClick={() => setStatus(!status)}>What?</button>
+
+        <p className="infoboxhidden" hidden={status}>
+          Click on the big red button to generate a random color. You can also
+          select the hue and luminosity of the generated color by selecting from
+          the two boxes.{' '}
+        </p>
       </div>
-    </header>
+      <header className="container">
+        <h1>RANDOMO - THE Color Generator</h1>
+      </header>
+    </>
   );
 }
 

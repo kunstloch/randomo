@@ -68,9 +68,30 @@ header h1 {
 }
 
 .infobox {
-  grid-column: 3;
-  grid-row: 1;
+  right: 5px;
+
   z-index: 2;
+  position: fixed;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.infobox button {
+  padding: 5px 8px;
+  border-radius: 4px;
+  margin: 6px;
+  border: solid black 2px;
+}
+
+.infoboxhidden {
+  right: 5px;
+
+  z-index: 2;
+  max-width: 150px;
+  background-color: tomato;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
 }
 
 .buttonStaunen {
