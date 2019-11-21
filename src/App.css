@@ -42,7 +42,7 @@ HIER KOMMT GRID
   margin: auto;
   grid-gap: 10px;
   grid-template-columns: auto 40% auto;
-  grid-template-rows: auto auto 30% auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
 }
 
 h1,
@@ -92,7 +92,7 @@ header h1 {
 .resultHex {
   grid-column: 2;
   grid-row: 3;
-  align-self: top;
+  align-self: center;
 }
 
 .yellowBox {
@@ -104,12 +104,12 @@ header h1 {
 .colorSelector {
   grid-column: 1;
   grid-row: 3;
-  font-size: 1.4vw;
+  font-size: 18px;
 }
 .lumSelector {
   grid-column: 3;
   grid-row: 3;
-  font-size: 1.4vw;
+  font-size: 18px;
 }
 
 .colorSelector,
